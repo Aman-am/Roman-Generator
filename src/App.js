@@ -41,16 +41,11 @@ class App extends Component {
     render() {
         return(
             <div className="main">
-                <h1>Roman Number Generator</h1>
-                <label>
-                    {/*Number:*/}
-                    <input type="number" name="integer" min="1" onChange={this.handleChange} defaultValue="1"/>
-                </label>
+                <p>Roman Number Generator</p>
+                <br/><br/>
+                <input type="number" name="integer" min="1" onChange={this.handleChange} defaultValue="1"/>
                 <i className="fas fa-arrow-right"></i>
-                <label>
-                    {/*Roman:*/}
-                    <input type="text" name="roman" value={this.state.roman} disabled/>
-                </label>
+                <input type="text" name="roman" value={this.state.roman} disabled/>
             </div>
         );
     }
